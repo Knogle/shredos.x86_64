@@ -1,11 +1,51 @@
 config BR2_PACKAGE_NWIPE
-        bool "nwipe"
-	select BR2_PACKAGE_NCURSES
-	select BR2_PACKAGE_PARTED
-	select BR2_PACKAGE_COREUTILS
-	select BR2_PACKAGE_DMIDECODE
-	select BR2_PACKAGE_LIBCONFIG
-        help
-          NWipe
+    bool "nwipe"
+    select BR2_PACKAGE_NCURSES
+    select BR2_PACKAGE_PARTED
+    select BR2_PACKAGE_COREUTILS
+    select BR2_PACKAGE_DMIDECODE
+    select BR2_PACKAGE_LIBCONFIG
+    help
+      NWipe
 
+choice
+    prompt "Select Nwipe Version"
+    default BR2_PACKAGE_NWIPE_VERSION_RELEASE
+    help
+      Select whether to use the Git version or the official release version of Nwipe.
+
+config BR2_PACKAGE_NWIPE_VERSION_RELEASE
+    bool "Use Release Version"
+    help
+      Use the official release version of Nwipe.
+
+config BR2_PACKAGE_NWIPE_VERSION_GIT
+    bool "Use Git Version"
+    help
+      Use the Git version of Nwipe from a repository, branch, and commit.
+
+endchoice
+
+config BR2_PACKAGE_NWIPE_REPO_URL
+    string "Nwipe Git Repository URL"
+    default "https://github.com/martijnvanbrummelen/nwipe"
+    depends on BR2_PACKAGE_NWIPE_VERSION_GIT
+    help
+      Specify the Git repository URL for nwipe.
+
+config BR2_PACKAGE_NWIPE_BRANCH
+    string "Nwipe Git Branch"
+    default "master"
+    depends on BR2_PACKAGE_NWIPE_VERSION_GIT
+    help
+      Specify the branch to use for the nwipe repository.
+
+config BR2_PACKAGE_NWIPE_COMMIT
+    string "Nwipe Git Commit"
+    default "2827171"
+    depends on BR2_PACKAGE_NWIPE_VERSION_GIT
+    help
+      Specify the commit to use for nwipe.
+      
 comment "nwipe"
+
