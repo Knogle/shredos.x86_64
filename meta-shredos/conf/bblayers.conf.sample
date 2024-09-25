@@ -6,12 +6,12 @@ BBPATH = "${TOPDIR}"
 BBFILES ?= ""
 
 BBLAYERS ?= " \
-  /workspace/../meta \
-  /workspace/../meta-.. \
-  /workspace/../meta-yocto-bsp \
-  /workspace/../meta-shredos \
-  /workspace/../meta-openembedded/meta-oe \
-  /workspace/../meta-openembedded/meta-filesystems \
-  /workspace/../meta-openembedded/meta-networking \
-  /workspace/../meta-openembedded/meta-python \
+  ${TOPDIR}/../meta \
+  ${TOPDIR}/../meta-poky \
+  ${TOPDIR}/../meta-yocto-bsp \
+  ${TOPDIR}/../meta-shredos \
+  ${TOPDIR}/../meta-openembedded/meta-oe \
+  ${TOPDIR}/../meta-openembedded/meta-filesystems \
+  ${TOPDIR}/../meta-openembedded/meta-networking \
+  ${TOPDIR}/../meta-openembedded/meta-python \
   "
