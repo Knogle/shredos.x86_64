@@ -1,3 +1,7 @@
+# Allow tracking of sample configuration files
+!build/conf/local.conf.sample
+!build/conf/bblayers.conf.sample
+
 # Ignore Python bytecode files
 *.pyc
 *.pyo
