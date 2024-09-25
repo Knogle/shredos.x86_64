@@ -102,7 +102,9 @@ Replace `<your-repo-url>` with the URL of your `meta-shredos` repository.
 Initialize the build environment using the `oe-init-build-env` script provided by Poky:
 
 ```bash
-source poky/oe-init-build-env
+cd shredos.x86_64
+git submodule update --init --recursive
+source oe-init-build-env
 ```
 
 This will create and switch you into the `build/` directory.
