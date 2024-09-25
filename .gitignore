@@ -1,39 +1,74 @@
+# Ignore Python bytecode files
 *.pyc
 *.pyo
+
+# Ignore patch files at the root level
 /*.patch
+
+# Ignore the .repo directory at the root level
 /.repo/
-/build*/
+
+# Ignore any directories starting with 'build'
+build*/
+
+# Ignore specific files and directories
 pyshtables.py
 pstage/
 scripts/oe-git-proxy-socks
 sources/
+
+# Ignore all 'meta-*' directories except specified ones
 meta-*/
-buildtools/
-!meta-skeleton
-!meta-selftest
-hob-image-*.bb
-*.swp
-*.orig
-*.rej
-*~
 !meta-poky
 !meta-yocto
 !meta-yocto-bsp
 !meta-yocto-imported
+!meta-skeleton
+!meta-selftest
+!meta-shredos  # Added to ensure 'meta-shredos' is not ignored
+
+# Ignore build tools directory
+buildtools/
+
+# Ignore hob image files
+hob-image-*.bb
+
+# Ignore temporary and backup files
+*.swp
+*.orig
+*.rej
+*~
+
+# Ignore generated documentation
 /documentation/*/eclipse/
 /documentation/*/*.html
 /documentation/*/*.pdf
 /documentation/*/*.tgz
+
+# Ignore built BitBake documentation
 /bitbake/doc/bitbake-user-manual/bitbake-user-manual.html
 /bitbake/doc/bitbake-user-manual/bitbake-user-manual.pdf
 /bitbake/doc/bitbake-user-manual/bitbake-user-manual.tgz
+
+# Ignore pull directories
 pull-*/
+
+# Ignore specific Toaster files and directories
 bitbake/lib/toaster/contrib/tts/backlog.txt
 bitbake/lib/toaster/contrib/tts/log/*
 bitbake/lib/toaster/contrib/tts/.cache/*
 bitbake/lib/bb/tests/runqueue-tests/bitbake-cookerdaemon.log
+
+# Ignore Toaster clones directory
 _toaster_clones/
+
+# Ignore downloads and sstate-cache directories
 downloads/
 sstate-cache/
+
+# Ignore Toaster SQLite database
 toaster.sqlite
+
+# Ignore Visual Studio Code settings
 .vscode/
+
