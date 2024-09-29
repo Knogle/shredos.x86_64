@@ -1,0 +1,17 @@
+[Unit]
+Description=Launcher for nwipe
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/nwipe_launcher.sh
+StandardInput=tty-force
+StandardOutput=tty
+StandardError=tty
+TTYPath=/dev/tty1
+TTYReset=yes
+TTYVHangup=yes
+Environment=TERM=linux
+
+[Install]
+WantedBy=multi-user.target

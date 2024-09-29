@@ -31,6 +31,7 @@ meta-*/
 !meta-selftest
 !meta-shredos  # Added to ensure 'meta-shredos' is not ignored
 
+!meta-shredos/*
 # Ignore build tools directory
 buildtools/
 

@@ -1,0 +1,13 @@
+[Unit]
+Description=Set up OverlayFS for writable root filesystem
+DefaultDependencies=no
+Before=sysinit.target local-fs.target
+After=systemd-modules-load.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/overlayfs-setup.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=sysinit.target
