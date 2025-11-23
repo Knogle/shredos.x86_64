@@ -1,11 +1,42 @@
 config BR2_PACKAGE_NWIPE
-        bool "nwipe"
+	bool "nwipe"
 	select BR2_PACKAGE_NCURSES
 	select BR2_PACKAGE_PARTED
 	select BR2_PACKAGE_COREUTILS
 	select BR2_PACKAGE_DMIDECODE
 	select BR2_PACKAGE_LIBCONFIG
-        help
-          NWipe
+	help
+	  NWipe – Secure disk wiping tool (Fork of Darik's Boot and Nuke).
+
+if BR2_PACKAGE_NWIPE
+
+choice
+	prompt "nwipe Version"
+	default BR2_PACKAGE_NWIPE_VERSION_DEFAULT
+
+config BR2_PACKAGE_NWIPE_VERSION_DEFAULT
+	bool "Stable Commit (051e1aa)"
+
+config BR2_PACKAGE_NWIPE_VERSION_MASTER
+	bool "master-Branch"
+
+config BR2_PACKAGE_NWIPE_VERSION_CUSTOM
+	bool "Custom Git-Ref"
+
+endchoice
+
+config BR2_PACKAGE_NWIPE_GIT_REF
+	string "Custom nwipe Git-Ref (Branch/Tag/Commit)"
+	default "051e1aa" if BR2_PACKAGE_NWIPE_VERSION_DEFAULT
+	default "master"  if BR2_PACKAGE_NWIPE_VERSION_MASTER
+	depends on BR2_PACKAGE_NWIPE_VERSION_CUSTOM
+	help
+	  Specify custom Git-Ref:
+	    - Branch: e.g. "feature/my-branch"
+	    - Tag:    e.g. "v0.38"
+	    - Commit: e.g. "051e1aa"
+
+endif
 
 comment "nwipe"
+
