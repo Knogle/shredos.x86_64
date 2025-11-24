@@ -12,9 +12,9 @@
 
 # ShredOS x86_64 - Disk Eraser
 
-## For all Intel and compatible 64 & 32 bit processors
+## For PCs, Servers and Macs with Intel and AMD 64 & 32 bit processors
 
-#### As well as a 64bit versions, also included are 32bit .img & .iso images of ShredOS that will run on both 32bit and 64bit processors, see [Release Assets](https://github.com/PartialVolume/shredos.x86_64/releases) and the table of download links below. For those that wish to build their own ShredOS from source, rather than just burn the .img/.iso images, instructions for modififing the x86_64 build to generate 32bit code as well as .iso images will be included below in the notes in due course.
+#### As well as a 64bit versions, also included are 32bit .img & .iso images of ShredOS that will run on both 32bit and 64bit processors, see [Release Assets](https://github.com/PartialVolume/shredos.x86_64/releases) and the table of download links below. For those that wish to build their own ShredOS from source, rather than just burn the .img/.iso images, follow the build instructions and make use of the supplied build configurations. Please note the additional information provided to run ShredOS on Apple systems. 
 		
 #### For those that just want to get on with using ShredOS, you can download the pre-built .img or .iso images and burn them straight to USB flash drive or CD/DVD. Boot from the USB flash drive or CD/DVD and nwipe will appear ready for you to select your preferred wipe options.
 [![GitHub all releases](https://img.shields.io/github/downloads/PartialVolume/shredos.x86_64/total?label=Total%20downloads%20x86_64%20all%20releases,%2064%20and%2032bit%20code,%20.iso%20and%20.img%20&style=plastic)](https://github.com/PartialVolume/shredos.x86_64/releases)
@@ -23,26 +23,28 @@
 
 NOTE! There may be pre-release versions that are newer than the latest versions listed below, To see all versions, [pre-release & latest](https://github.com/PartialVolume/shredos.x86_64/releases) The latest versions contain a full set of .img & .iso images in 32bit & 64bit while the pre-releases generally only contain a 64bit .img. Which should you use? Well, unless you need either 32 bit images or .iso images I would tend to download the very latest pre-release. Even the pre-releases are subjected to a fair amount of testing before they become a pre-release.
 
-### ShredOS version v2024.02.2_26.0_x86-64_0.37 (Latest Release) 
+### ShredOS version v2024.11_27_x86-64_0.38 [(Latest Release - Details)](https://github.com/PartialVolume/shredos.x86_64/releases/tag/v2024.11_27_x86-64_0.38) 
+| Nwipe Version | File to download |
+| -- | -- |
+| v0.38 | [ShredOS .img x86_64bit for USB Vanilla](https://github.com/PartialVolume/shredos.x86_64/releases/download/v2024.11_27_x86-64_0.38/shredos-2024.11_27_x86-64_0.38_20250123.img) |
+| v0.38 | [ShredOS .iso x86_64bit for CD/DVD/Ventoy, Vanilla](https://github.com/PartialVolume/shredos.x86_64/releases/download/v2024.11_27_x86-64_0.38/shredos-2024.11_27_x86-64_0.38_20250125_vanilla.iso) |
+| v0.38 | [ShredOS .iso x86_64bit for CD/DVD/Ventoy nomodeset ](https://github.com/PartialVolume/shredos.x86_64/releases/download/v2024.11_27_x86-64_0.38/shredos-2024.11_27_x86-64_0.38_20250125_nomodeset.iso) |
+| v0.38 | [ShredOS .img i586_32bit for USB vanilla ](https://github.com/PartialVolume/shredos.x86_64/releases/download/v2024.11_27_x86-64_0.38/shredos-2024.11_27_i586_32bit_0.38_20250127_vanilla.img) |
+| v0.38 | [ShredOS .iso i586_32bit for CD/DVD/Ventoy vanilla ](https://github.com/PartialVolume/shredos.x86_64/releases/download/v2024.11_27_x86-64_0.38/shredos-2024.11_27_i586_32bit_0.38_20250128_vanilla.iso) |
+
+### ShredOS version v2024.02.2_26.0_x86-64_0.37 [(Previous Release - Details)](https://github.com/PartialVolume/shredos.x86_64/releases/tag/v2024.02.2_26.0_x86-64_0.37) 
 | Nwipe Version | File to download |
 | -- | -- |
 | v0.37 | [ShredOS .img x86_64bit for USB Vanilla](https://github.com/PartialVolume/shredos.x86_64/releases/download/v2024.02.2_26.0_x86-64_0.37/shredos-2024.02.2_26.0_x86-64_0.37_20240610.img) |
 | v0.37 | [ShredOS .iso x86_64bit for CD/DVD/Ventoy, Vanilla](https://github.com/PartialVolume/shredos.x86_64/releases/download/v2024.02.2_26.0_x86-64_0.37/shredos-2024.02.2_26.0_x86-64_0.37_20240611.iso) |
 | v0.37 | [ShredOS .iso x86_64bit for CD/DVD/Ventoy nomodeset ](https://github.com/PartialVolume/shredos.x86_64/releases/download/v2024.02.2_26.0_x86-64_0.37/shredos-2024.02.2_26.0_x86-64_0.37-nomodeset_20240611.iso) |
 
-### ShredOS version v2023.08.2_25_x86-64_0.35 (Previous Release)
-| Nwipe Version | File to download |
-| -- | -- |
-| v0.35 | [ShredOS .img x86_64bit for USB Vanilla DRM](https://github.com/PartialVolume/shredos.x86_64/releases/download/v2023.08.2_25.0_x86-64_0.35/shredos-2023.08.2_25.0_x86-64_0.35_20231110.img) |
-| v0.35 | [ShredOS .iso x86_64bit for CD/DVD, Ventoy Vanilla DRM](https://github.com/PartialVolume/shredos.x86_64/releases/download/v2023.08.2_25.0_x86-64_0.35/shredos-2023.08.2_25.0_x86-64_0.35_20240207.iso) |
-| v0.35 | [ShredOS .iso x86_64bit for CD/DVD, Ventoy nomodeset NoDRM](https://github.com/PartialVolume/shredos.x86_64/releases/download/v2023.08.2_25.0_x86-64_0.35/shredos.x86_64-2023.08.2_25.0_x86-64_0.35_nomodeset.iso) |
-| v0.35 | [ShredOS .img i586_32bit for USB Vanilla](https://github.com/PartialVolume/shredos.x86_64/releases/download/v2023.08.2_25.0_x86-64_0.35/shredos-2023.08.2_25.0_i586_0.35_20240219.img) |
-| v0.35 | [ShredOS .iso i586_32bit for CD/DVD](https://github.com/PartialVolume/shredos.x86_64/releases/download/v2023.08.2_25.0_x86-64_0.35/shredos-2023.08.2_25.0_i586_0.35_20240210.iso) |
-
 ### For all releases including latest and more recent pre-releases [releases](https://github.com/PartialVolume/shredos.x86_64/releases)
 
-Note: The .img files for burning to USB flash drives support both bios/UEFI booting. The .iso image currently supports legacy bios booting only and not UEFI, however, a bios/UEFI version of the .iso is in development and will be released shortly.
-You can also consider [VENTOY (Open Source tool to create bootable USB drive for ISO/WIM/IMG/VHD(x)/EFI files)](https://github.com/ventoy/Ventoy) as a workaround to avoid bios/UEFI issues.
+Note for versions **after** _v2024.11_27_x86-64_0.38_: The .img files for burning to USB flash drives support both BIOS/UEFI booting, as well as saving of generated PDF reports to the USB flash drive. The .iso image also supports both BIOS/UEFI booting, burning to USB flash drives and CD/DVD-ROM, but not (yet) saving of generated PDF reports to the USB flash drive (unless being written in "ISO-Mode" with some tools, such as Rufus). Use the .img file whenever needing these generated PDF reports or planning to customize ShredOS (`autonuke` setups, kernel parameters, ...). The .img file also allows direct interaction with the filesystem and modification of the GRUB boot menu, e.g. appending of kernel parameters, which the .iso file does not support due to filesystem constraints.
+
+Note for versions **until** _v2024.11_27_x86-64_0.38_: The .img files for burning to USB flash drives support both BIOS/UEFI booting. The .iso image supports legacy BIOS booting only and not UEFI, however, a BIOS/UEFI version of the .iso is available in newer ShredOS versions.
+You can also consider [VENTOY (Open Source tool to create bootable USB drive for ISO/WIM/IMG/VHD(x)/EFI files)](https://github.com/ventoy/Ventoy) as a workaround to avoid BIOS/UEFI issues.
 		
 #### Demo video below: ShredOS automatically displays Nwipe's interactive GUI at boot.
 You can then select one or more drives to be erased, wipe method or pattern to be used, number of rounds, whether a zeros blanking pass is applied, verification options such as last pass, all passes or no verification. ShredOS and nwipe are highly configurable so if you prefer to run nwipe without a GUI then you can configure nwipe by applying nwipe options to the linux command line in grub.cfg on the USB flash drive.
@@ -74,13 +76,16 @@ A certificate can optionally be created for each drive erased, the default is to
    1. [Transferring nwipe log files to a ftp server using lftp](#transferring-nwipe-log-files-to-a-ftp-server-using-lftp)
 1. [How to wipe drives on headless systems or systems with faulty display hardware. (For use on secure LANs only)](#how-to-wipe-drives-on-headless-systems-or-systems-with-faulty-display-hardware-for-use-on-secure-lans-only)
 1. [Nwipe's font size is too small, How to double the size of the text](#nwipes-font-size-is-too-small-how-to-double-the-size-of-the-text)
-1. [Shredos includes the following related programs](#shredos-includes-the-following-related-programs)
+1. [Included Packages](#Included-Packages)
    1. [smartmontools](#smartmontools)
    1. [hdparm](#hdparm)
    1. [hexedit](#hexedit)
    1. [nvme-cli](#hdparm)
    1. [sg3_utils](#sg3_utils)
    1. [parallel](#parallel)
+1. [Wipe SSD and NVME using hdparm and nvme-cli](#wipe-ssd-and-nvme-using-hdparm-and-nvme-cli)
+   1. [Wipe SSD](#wipe-ssd)
+   1. [Wipe NVME](#wipe-nvme)
 1. [Compiling shredos and burning to USB stick, the harder way!](#compiling-shredos-and-burning-to-usb-stick-the-harder-way-)
    1. [Install the following prerequisite software first. Without this software, the make command will fail](https://github.com/PartialVolume/shredos.x86_64/blob/master/README.md#install-the-following-prerequisite-software-first-without-this-software-the-make-command-will-fail)
    1. [Download the ShredOS source using the git command and build ShredOS](https://github.com/PartialVolume/shredos.x86_64/blob/master/README.md#download-the-shredos-source-using-the-git-command-and-build-shredos)
@@ -96,6 +101,10 @@ A certificate can optionally be created for each drive erased, the default is to
 	1. [../package/nwipe/nwipe.hash](#packagenwipenwipehash)
 	1. [../package/nwipe/Config.in](#packagenwipeconfigin)
 	1. [../package/nwipe/002-nwipe-banner-patch.sh](#packagenwipe002-nwipe-banner-patchsh)
+ 1. [Troubleshooting](#Troubleshooting)
+ 	1. [Small Font Size and Inteface](#Small-Font-Size-and-Interface)
+  	1. [Disks with Non-Standard Blocksizes](#Drives-with-Non-Standard-Blocksizes)
+   	1. [Disks with Integrity Protection](#Drives-with-Integrity-Protection)
 
 ## What is ShredOS?
 ShredOS is a USB bootable (BIOS or UEFI) small linux distribution with the sole purpose of securely erasing the entire contents of your
@@ -103,7 +112,7 @@ disks using the program [nwipe](https://github.com/martijnvanbrummelen/nwipe). I
 
 ShredOS supports either 32bit or 64bit processors. You will need to download the appropriate 64bit or 32bit .img or .iso file, depending upon your target processor and whether you want to burn ShredOS to a USB memory stick, in which case you would download the .img file. Alternatively, if you wanted to burn ShredOS to CD/DVD, then you would download the .iso file.
 
-Because ShredOS boots and runs straight from a USB flash drive or DVD/CD, it doesn't matter what operating system already exists on the computer. It will remove all data/directories/operating systems, from the drive or drives you have selected for wiping, leaving a disk with no trace of what originally existed. It will wipe PCs & Intel-based Macs, such as MacBookPros. It doesn't care what operating system previosuly existed, be it Windows/Mac OSX/Linux/VXWorks. 
+Because ShredOS boots and runs straight from a USB flash drive or DVD/CD, it doesn't matter what operating system already exists on the computer. It will remove all data/directories/operating systems, from the drive or drives you have selected for wiping, leaving a disk with no trace of what originally existed. It will wipe PCs & Intel-based Macs, such as MacBookPros. It doesn't care what operating system previously existed, be it Windows/Mac OSX/Linux/VXWorks. 
 
 ShredOS can be used as a software image and booted via the network using a client PC that supports Preboot execution environment (PXE) via a PXE enabled server. A procedure for creating a simple UEFI PXE server based on Debian/Ubuntu and serving up ShredOS can be found here [#148](https://github.com/PartialVolume/shredos.x86_64/discussions/148)
 		
@@ -121,8 +130,8 @@ This paragraph is for those that are not familiar with wiping disks. if you know
 
 ## Nwipe's erasure methods
 
-* Fill With Zeros    - Fills the device with zeros (0x00), one round only.
-* Fill With Ones     - Fills the device with ones  (0xFF), one round only.
+* Fill With Zeros    - Fills the device with zeros (0x00).
+* Fill With Ones     - Fills the device with ones  (0xFF).
 * RCMP TSSIT OPS-II  - Royal Canadian Mounted Police Technical Security Standard, OPS-II
 * DoD Short          - The American Department of Defense 5220.22-M short 3 pass wipe (passes 1, 2 & 7).
 * DoD 5220.22M       - The American Department of Defense 5220.22-M full 7 pass wipe.
@@ -248,11 +257,11 @@ menuentry "shredos" {
 **WARNING** 
 You should not place the string `/etc/shredos/shredos_exclude_disc` on multiple FAT formatted drives or for that matter any drive irrespective of formatting, expecting all the drives with this string to not appear in nwipe or not get wiped in interactive mode. The file `/etc/shredos/shredos_exclude_disc` should only appear on the one and only ShredOS boot drive on the system. Any other drives that contain `/etc/shredos/shredos_exclude_disc` will appear in nwipe and WILL get wiped in autonuke mode.
 
-## A word about the Mac Book Pro
-Yes, ShredOS will boot on Mac Book Pros, however here's a few tips you may find useful.
+## Informations for Intel powered Apple Devices
+Yes, ShredOS will boot on **Intel** powered Macs, however here's a few tips you may find useful.
 
 - Booting from USB. Power off then power on holding down the `alt` key. After a few seconds select EFI boot.
-- Due to the high resolution screens on a Mac Book Pro you may find the text displayed by nwipe and in the virtual terminals is very small. To enlarge the text follow the instructions [here](#nwipes-font-size-is-too-small-I-want-the-text-to-be-bigger).
+- Due to the high resolution screens on a Mac Book Pro you may find the text displayed by nwipe and in the virtual terminals is very small. To enlarge the text follow the instructions [here](#nwipes-font-size-is-too-small-how-to-double-the-size-of-the-text).
 - How to switch between virtual terminals on a Mac. On a PC it's usually (but not always) ALT F1 (/dev/tty1 - nwipe), ALT F2 (/dev/tty2 or /dev/tty0 - terminal), ALT F3 (/dev/console - console). However on a MAC you switch virtual terminals as follows. FN+ALT F1 (/dev/tty1 - nwipe), FN+ALT F2 (/dev/tty2 or /dev/tty0 - terminal), FN+ALT F3 (/dev/console).
 
 ## How to make a persistent change to the terminal resolution
@@ -571,31 +580,15 @@ Type `nwipe` as shown above and the nwipe GUI will be displayed and you can proc
 >Due to the insecure nature of telnet as opposed to ssh, it goes without saying that this method of accessing ShredOS & nwipe should only be carried out on a trusted local area network and never over the internet unless via a VPN or SSH tunnel. ssh access may be provided at a future date if it's requested.
 
 ## Nwipes font size is too small How to double the size of the text
-If you are using a monitor with a native high resolution you may find that nwipe's font size is too small for your liking, if that's the case, you just need to type the following command in the second virtual terminal `/bin/setfont -d -C /dev/tty1`. To double the font size in other virtual terminals use `/bin/setfont -d -C /dev/tty2` and `/bin/setfont -d -C /dev/console`.
+If you are using a monitor with a native high resolution you may find that nwipe's font size is too small for your liking. Type `F` to toggle the scaling of the interface to 200% during the disk selection screen or the progress screen.
 
-#### Detail
-Type ALT F2 (Fn ALT F2 on a Mac) to bring up the 2nd virtual console. Type the following tty command which will return the current console name. So from this result /dev/tty2 we can deduce that the default nwipe in ALT F1 is /dev/tty1. For reference ALT F3 is /dev/console.
-
-```
-tty
-/dev/tty2
-```
-To set the font for the default nwipe in the first virtual console ALT F1 (/dev/tty1), type the following command in the 2nd virtual console (ALT F2)
-```
-/bin/setfont -d -C /dev/tty1
-```
-
-> **Warning**
->Always specify the full path to setfont, setfont -d -C /dev/tty1 without the /bin/ prefix, will not work! There are actually two different versions of setfont on Linux and if you ommit the prefix path you will be running the wrong setfont which won't work.
-
-
-![image](https://user-images.githubusercontent.com/22084881/216849290-8e1c05d2-c856-4466-b76f-eec4ccd2d880.png)
 Default font size on a high resolution monitor.
-.
-![image](https://user-images.githubusercontent.com/22084881/216849326-e9a5c3a0-4485-432a-a3c7-a72858faeab1.png)
+![image](https://user-images.githubusercontent.com/22084881/216849290-8e1c05d2-c856-4466-b76f-eec4ccd2d880.png)
+
 After running the setfont command.
-		
-## ShredOS includes the following related programs
+![image](https://user-images.githubusercontent.com/22084881/216849326-e9a5c3a0-4485-432a-a3c7-a72858faeab1.png)
+
+## Included Packages
 
 #### smartmontools
 Nwipes ability to detect serial numbers on USB devices now works on USB bridges who's chipset supports that functionality. Smartmontools provides nwipe with that capability. Smartmontools can be used in the second or third virtual terminal. ALT-F2 and ALT-F3.
@@ -612,8 +605,175 @@ nvme can be used run a secure erase on NVMe devices.
 #### sg3_utils
 Like hdparm sg3_utils has many applications such as changes to the disk's block sizes, removal of scsi integrity protection and firmware level reformating (such as sanitization or secure erase). nwipe currently wipes drives using the traditional method of writing to every block. If you want to initiate a SCSI / SAS secure erase using the drives firmware then sg3_utils will be of use, it can also be used in conjunction with gnu parallel to format multiple drives at once. 
 
-#### sg3_utils
+#### parallel
 GNU parallel is a shell tool for executing jobs in parallel using one or more computers. It can be helpfull when you need sg3_utils or hdparm to prepare multiple disks at the same time. 
+
+## Wipe SSD and NVME using hdparm and nvme-cli
+>[!CAUTION]
+>Make sure you have selected the correct device before issuing commands dealing with erasing/sanitizing as most of these commands do not ask for furter verification.(see e.g --yes-i-know-what-i-am-doing)
+
+#### Wipe SSD
+
+>[!NOTE]
+>SANITIZE is prefered over SECURITY ERASE UNIT if supported by the drive.
+>As Sanitize will remove both the mappings table and the blocks that have been written to, while SECURITY ERASE UNIT will only delete the mapping table. Therefore the latter is faster to complete.
+
+Press `ALT+F2` to open a virtual terminal.
+
+Find disks on the system
+```
+$ fdisk -l
+```
+
+Check that the drive is not frozen
+```
+$ hdparm -I /dev/sdX | grep frozen
+...
+	not	frozen
+...
+```
+
+If frozen (repeat until not frozen)
+```
+$ echo -n mem > /sys/power/state
+```
+
+or alternatively, use the following command which sends the computer to sleep and then automatically powers the computer back up after 5 seconds. See ShredOS wiki for details on [sleep states](https://github.com/PartialVolume/shredos.x86_64/wiki/Unfreezing-hard-drives-for-ATA-secure-erase) These commands will only work reliably if you are using the vanilla version of ShredOS. This is because the Linux Direct Rendering Manager (DRM) is required to correctly wake the display hardware, with the nomodeset version of ShredOS DRM is disabled and you may end up with a blank screen after rewaking.
+```
+rtcwake -m mem -s 5
+```
+
+##### SANITIZE:
+
+Check for support
+```
+$ hdparm --sanitize-status /dev/sdx
+
+/dev/sdX:
+Issuing SANITIZE_STATUS command
+Sanitize status:
+    State:    SD0 Sanitize Idle
+```
+>if not move on to [secure erase](#security-erase-unit).
+
+Check for block erase support
+```
+$ hdparm -I /dev/sdX | grep BLOCK_ERASE_EXT
+	  *	BLOCK_ERASE_EXT command
+```
+>While BLOCK_ERASE_EXT should be sufficient, CRYPTO_SCRAMBLE_EXT and OVERWRITE_EXT might be more appliceable for your use.
+
+Sanitize the disk
+```
+$ hdparm --yes-i-know-what-i-am-doing --sanitize-block-erase /dev/sdX
+```
+
+Check status
+```
+$ hdparm --sanitize-status /dev/sdX
+```
+
+Verify
+```
+$ dd if=/dev/sdX bs=8192 status=progress | hexdump
+```
+
+##### SECURITY ERASE UNIT:
+
+Check that it is not frozen and you can also see the estimated time to run.
+```
+$ hdparm -I /dev/sdX
+...
+	not	frozen
+...
+	2min for SECURITY ERASE UNIT. 2min for ENHANCED SECURITY ERASE UNIT.
+...
+```
+
+If frozen (repeat until not frozen)
+```
+$ echo -n mem > /sys/power/state
+```
+
+Set user and password then erase disk
+```
+$ hdparm --user-master u --security-set-pass p /dev/sdX security_password="p"
+$ hdparm --user-master u --security-erase p /dev/sdX security_password="p"
+```
+>If your drive supports enhanced erase, you may want to substitute security-erase with security-erase-enhanced. 
+
+Verify
+```
+$ dd if=/dev/sdX bs=8192 status=progress | hexdump
+```
+
+#### Wipe NVME
+
+>[!NOTE]
+>Sanitize is the prefered method but might not be supported by all vendors as it is an optional feature.
+
+Press `ALT+F2` to open a virtual terminal.
+
+Lists disks on the system:
+```
+$ nvme list
+```
+
+##### SANITIZE:
+
+Check for support
+```
+$ nvme id-ctrl -H /dev/nvmeX | grep Sanitize
+...
+    [1:1] : 0x1	Block Erase Sanitize Operation Supported
+    [0:0] : 0x1	Crypto Erase Sanitize Operation Supported
+...
+```
+
+Sanitize the disk
+```
+$ nvme sanitize -a 2 /dev/nvmeX
+```
+>While Block Erase should be sufficient, Overwrite and Crypto Erase might be more appliceable for your use.
+>Replace 2 for Block erase, 3 for Overwrite, 4 for Crypto Erase
+
+Check Status
+```
+$ nvme sanitize-log /dev/nvmeX
+
+Sanitize Progress                      (SPROG) :  65535
+Sanitize Status                        (SSTAT) :  0x101
+...
+```
+>Status: 0x101 denotes complete.
+ 
+Verify
+```
+$ dd if=/dev/nvmeX bs=8192 status=progress | hexdump
+```
+
+##### SECURE ERASE:
+
+Check for support
+```
+$ nvme id-ctrl /dev/nvmeX | grep fna
+fna		: 0x4
+```
+
+If crypto erase is supported(0x4 as above)
+```
+$ nvme format /dev/nvmeX -n 0xffffffff –ses=2
+```
+
+else
+```
+$ nvme format /dev/nvmeX -n 0xffffffff -ses=1
+```
+
+Verify
+```
+$ dd if=/dev/nvmeX bs=8192 status=progress | hexdump
+```
 
 ## Compiling ShredOS and burning to USB stick, the harder way !
 
@@ -624,16 +784,29 @@ The image (.img) file is approximately 260 MiB and can be written to a USB memor
 
 #### Install the following prerequisite software first. Without this software, the make command will fail
 ```
-$ sudo apt install git
-$ sudo apt install build-essential   pkg-config   automake   libncurses5-dev   autotools-dev   libparted-dev   dmidecode   coreutils   smartmontools unzip
-$ sudo apt-get install libssl-dev
-$ sudo apt-get install libelf-dev
-$ sudo apt-get install mtools
+sudo apt update
+sudo apt install \
+  automake \
+  autotools-dev \
+  build-essential \
+  cpio \
+  coreutils \
+  dmidecode \
+  dosfstools \
+  git \
+  libelf-dev \
+  libncurses5-dev \
+  libparted-dev \
+  libssl-dev \
+  mtools \
+  pkg-config \
+  smartmontools \
+  unzip
 ```
 
 #### Download the ShredOS source using the git clone command, build ShredOS and write to a USB memory device.
 ```
-$ git clone https://github.com/PartialVolume/shredos.x86_64.git (or shredos.i686.git for 32bit)
+$ git clone https://github.com/PartialVolume/shredos.x86_64.git
 $ cd shredos
 $ mkdir package/shredos
 $ touch package/shredos/Config.in
@@ -644,6 +817,56 @@ $ ls output/images/shredos*.img
 $ cd output/images
 $ dd if=shredos-20200412.img of=/dev/sdx (20200412 will be the day you compiled, sdx is the USB flash drive)
 ```
+
+#### The following configurations are available to build different targets:
+
+- `make shredos_defconfig` - build USB image and hybrid ISO (64-bit)
+- `make shredos_i586_defconfig` - build USB image and hybrid ISO (32-bit)
+- `make shredos_img_defconfig` - build USB image only (64-bit)
+- `make shredos_img_i586_defconfig` - build USB image only (32-bit)
+- `make shredos_iso_defconfig` - build hybrid ISO only (64-bit)
+- `make shredos_iso_i586_defconfig` - build hybrid ISO only (32-bit)
+- `make shredos_iso_legacy_defconfig` - build legacy ISO only (64-bit)
+- `make shredos_iso_legacy_i586_defconfig` - build legacy ISO only (32-bit)
+
+#### The following experimental configurations are available for testing:
+
+- `make shredos_iso_extra_defconfig` - build hybrid ISO with appended writeable partition (64-bit)
+- `make shredos_iso_extra_i586_defconfig` - build hybrid ISO with appended writeable partition (32-bit)
+
+Do note that loading a configuration should typically be the last step before `make`.
+
+> **The hybrid ISOs offer the most flexibility over the other formats:**
+>
+>- are BIOS and UEFI bootable
+>- can both be written to CD/DVD-ROM and USB flash drives
+>- use ISOLINUX in BIOS for better compliance with very old systems
+>- **but** do not have a writeable partition for PDFs/configurations
+>
+> Some tools such as Rufus offer an "ISO-Mode", which enable such a writeable
+> partition at burn-time, which then also allows customization of the GRUB
+> configuration.
+>
+>The **extra** ISOs (experimental) have an "extra" write partition appended.  
+>The **legacy** ISOs work in BIOS and UEFI, but only as burned to CD/DVD-ROM.
+
+#### Building multiple configurations:
+
+Generally, when building multiple configurations of the above on the same
+architecture, you only need to ensure that `make grub2-reconfigure` (and
+eventually `make`) are run between any two configurations. The same applies to
+any other package whose configuration has changed, adding corresponding
+`<package>-reconfigure` steps, before the eventual `make`. A `make clean` step is
+not usually required unless you have made significant changes to the project,
+which should save time for such builds between same-architecture configurations.
+
+For two configurations targeting different architectures, a full `make clean`
+is always required when switching between them, plan time for this (takes long).
+
+For your convenience, look also into the `build_all_shredos.sh` script in the
+project root. If you invoke it with no arguments, it will show a usage manual
+and allow you to build multiple configuration targets with more ease.
+
 ### Issues that you may get when building ShredOS
 - **Error: "Internal Size Too Big"** If you are compiling the vanilla version of ShredOS and have made no alterations or additions but it fails to build the .img with the error "Internal error: size too big" then you may have a version of mtools that has a version of mcopy which has a bug whenever the -b option is used. This bug is known to exist in mcopy version 4.0.32 and maybe others but is fixed in v4.0.42. The solution is to upgrade your copy of mtools to a later version. However, if you have altered ShredOS by adding more packages you may need to update the size of the fat32 partition. You can do this by increasing the 'size' in ../board/shredos/genimage.cfg. Depending on how much extra software you have added increase the size by 10MB or more. Currently as of March 2023 the current size is `size = 130000000`, this is in bytes, so adding 10MB will mean you need to edit this value so that it reads `size = 140000000`. After the edit, just run `make` which will result in a quicker build. You don't need to run `make clean` first as that would result in a full rebuild which is not neccessary when all you are doing is increasing the final image size. If your repository does not supply a later version of mtools, then you can obtain mtools packages for various distros from [here](https://www.gnu.org/software/mtools/#downloads)
 
@@ -674,9 +897,36 @@ make busybox-menuconfig
 make busybox-update-config # save the changes
 ```
 ### Important ShredOS files and folders when building ShredOS from source
-
-#### ../board/shredos/doimg.sh
-doimg.sh is a bash script, the main purpose of which is to generate the .img file located in output/images/. However it is also used to copy the pre-compiled .efi file and other files such as the shredos.ico, autorun.inf for Windows, README.txt. The contents of board/shredos/version.txt is also used to rename the .img file with version info and the current date and time.
+#### ../build_all_shredos.sh
+build_all_shredos.sh is a convenience script to build (multiple) ShredOS.
+If launched without arguments, it will show a usage manual on the screen.
+		
+#### ../board/shredos/make_img_file.sh
+make_img_file.sh is a bash script, the main purpose of which is to generate the .img file located in output/images/. However it is also used to copy the compiled .efi file and other files such as the shredos.ico, autorun.inf for Windows, README.txt. The contents of board/shredos/version.txt is also used to rename the .img file with version info and the current date and time.
+		
+#### ../board/shredos/make_iso_file.sh
+make_iso_file.sh is a bash script, the main purpose of which is to rename the .iso file located in output/images/. The contents of board/shredos/version.txt is used to rename the .iso file with version info and the current date and time.
+		
+#### ../board/shredos/grub.cfg
+The USB image's GRUB configuration, which both the BIOS and UEFI bootloader will use.
+It contains the BIOS and UEFI boot menu for the USB image.
+		
+#### ../board/shredos/embed/grub.cfg
+The GRUB configuration that is embedded into the GRUB images at build-time.
+It contains directions for GRUB to find the right volume and GRUB configuration.
+This applies for both the USB images and ISO images, and both for BIOS and UEFI.
+		
+#### ../board/shredos/iso/isolinux.cfg
+The ISO image's ISOLINUX configuration, which the BIOS bootloader will use.
+It contains the BIOS boot menu for the ISO image.
+		
+#### ../board/shredos/iso/grub.cfg
+The ISO image's GRUB configuration, which the UEFI bootloader will use.
+It contains the UEFI boot menu for the ISO image.
+		
+#### ../board/shredos/iso/efigrub.cfg
+The GRUB configuration that is embedded into the ISO's UEFI partition.
+It contains directions for GRUB to find the ISO9660's GRUB configuration.
 		
 #### ../board/shredos/fsoverlay/etc/shredos/version.txt
 This file contains the version information as seen in the title on nwipe's title bar, i.e. '2021.08.2_22_x86-64_0.32.023'. This version ingformation is also used when naming the .img file in ../output/images/ ../board/shredos/fsoverlay/etc/shredos/version.txt is manually updated for each new release of ShredOS.
@@ -707,26 +957,34 @@ This script contains the changes that are made to nwipe's version.c
 
 ## Troubleshooting
 
-### Non-Standard Blocksizes
+### Small Font Size and Interface
+On Some systems the fonts might be rendered too small. 
+
+#### Solution for small font size and interface
+If you press `F` in the Drive Selection or during the wipe process, the interface will be scaled to 200% to allow better readability on high resolution displays. 
+
+### Drives with Non-Standard Blocksizes
 Certain SAS disks come with block sizes that nwipe might not be able to digest.
 In that case you can use sg_format to readjust the block size to a standard size such as `512` or `4096`.
 
-#### Instructions
-1. List disks using `lsblk`
-2. Identify the device with the wrong block size by executing `sg_format <device>`
-3. Run `sg_format -f --format --size=<512 / 4096> <device> --quick`
-4. Wait till the process terminated and check by executing `sg_format <device>` again. 
+#### Solution for Non-Standard Blocksizes
+1. Keyboard shortcut ALT-F2 you can open the second virtual terminal to open the shell
+2. List disks using `lsblk`
+3. Identify the device with the wrong block size by executing `sg_format <device>`
+4. Run `sg_format -f --format --size=<512 / 4096> <device> --quick`
+5. Wait till the process terminated and check by executing `sg_format <device>` again. 
 
 A full guide to also reformat multiple disks [can be found here](https://github.com/gms-electronics/formatingguide/blob/main/README.md).
 
-### Integrity Protection
+### Drives with Integrity Protection
 Certain SAS disks (especially disks that are used in storage systems such as HP 3Par or comparible Dell EMC Solutions) come with particular SAS features preconfigured to protect the disk from cancellation.
 
-#### Instructions
-1. List disks using lsblk
-2. Identify the device with the wrong block size by executing `sg_format <device>`
-3. Run `sg_format -v --fmtpinfo=0 --format --size=<512 / 4096> <device> --quick`
-4. Wait till the process terminated and check by executing `sg_format <device>` again.
+#### Solution for Drives with Integrity 
+1. With ALT-F2 you can open the second virtual terminal to open the shell
+2. List disks using `lsblk`
+3. Identify the device with the wrong block size by executing `sg_format <device>`
+4. Run `sg_format -v --fmtpinfo=0 --format --size=<512 / 4096> <device> --quick`
+5. Wait till the process terminated and check by executing `sg_format <device>` again.
 
 A full guide to also remove integrity protection from multiple disks [can be found here](https://github.com/gms-electronics/formatingguide/blob/main/README.md) can be found here.
 
