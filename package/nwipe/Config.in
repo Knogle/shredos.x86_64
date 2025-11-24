@@ -6,35 +6,51 @@ config BR2_PACKAGE_NWIPE
 	select BR2_PACKAGE_DMIDECODE
 	select BR2_PACKAGE_LIBCONFIG
 	help
-	  NWipe – Secure disk wiping tool (Fork of Darik's Boot and Nuke).
+	  NWipe – secure disk wiping tool (fork of Darik's Boot and Nuke).
 
 if BR2_PACKAGE_NWIPE
 
-choice
-	prompt "nwipe Version"
-	default BR2_PACKAGE_NWIPE_VERSION_DEFAULT
+config BR2_PACKAGE_NWIPE_SITE
+	string "nwipe Git repository URL"
+	default "https://github.com/martijnvanbrummelen/nwipe.git"
+	help
+	  Git repository used to fetch the nwipe sources.
+	  This can be changed to point to a custom fork, e.g.:
+	    - https://github.com/youruser/nwipe.git
+	    - git@github.com:youruser/nwipe.git
 
-config BR2_PACKAGE_NWIPE_VERSION_DEFAULT
-	bool "Stable Commit (051e1aa)"
+choice
+	prompt "nwipe version"
+	default BR2_PACKAGE_NWIPE_VERSION_STABLE
+	help
+	  Select which nwipe version (Git ref) should be built.
+
+config BR2_PACKAGE_NWIPE_VERSION_STABLE
+	bool "Stable commit (051e1aa)"
+	help
+	  Use the previously hard-coded commit (051e1aa) as a stable baseline.
 
 config BR2_PACKAGE_NWIPE_VERSION_MASTER
-	bool "master-Branch"
+	bool "Upstream master branch"
+	help
+	  Always build from the current upstream master branch.
 
-config BR2_PACKAGE_NWIPE_VERSION_CUSTOM
-	bool "Custom Git-Ref"
+config BR2_PACKAGE_NWIPE_VERSION_GIT_REVISION
+	bool "Git revision"
+	help
+	  Use a user-specified Git revision (commit SHA-1 or branch name).
 
 endchoice
 
-config BR2_PACKAGE_NWIPE_GIT_REF
-	string "Custom nwipe Git-Ref (Branch/Tag/Commit)"
-	default "051e1aa" if BR2_PACKAGE_NWIPE_VERSION_DEFAULT
-	default "master"  if BR2_PACKAGE_NWIPE_VERSION_MASTER
-	depends on BR2_PACKAGE_NWIPE_VERSION_CUSTOM
+config BR2_PACKAGE_NWIPE_GIT_REVISION
+	string "Insert a commit's SHA-1 or a branch name"
+	depends on BR2_PACKAGE_NWIPE_VERSION_GIT_REVISION
 	help
-	  Specify custom Git-Ref:
-	    - Branch: e.g. "feature/my-branch"
-	    - Tag:    e.g. "v0.38"
-	    - Commit: e.g. "051e1aa"
+	  When 'Git revision' is selected above, this string is passed as the
+	  Git ref to check out. Examples:
+	    - origin/master
+	    - feature/my-branch
+	    - 051e1aa
 
 endif
 
