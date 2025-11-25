@@ -6,12 +6,12 @@
 
 # Select the Git reference based on the Kconfig choice.
 ifeq ($(BR2_PACKAGE_NWIPE_VERSION_STABLE),y)
-NWIPE_VERSION = 051e1aa
+NWIPE_VERSION = v0.39
 else ifeq ($(BR2_PACKAGE_NWIPE_VERSION_GIT_REVISION),y)
 NWIPE_VERSION = $(call qstrip,$(BR2_PACKAGE_NWIPE_GIT_REVISION))
 else
 # Fallback – should not happen because the choice enforces exactly one option
-NWIPE_VERSION = 051e1aa
+NWIPE_VERSION = v0.39
 endif
 
 # Default Git repository URL (never empty).
@@ -31,7 +31,10 @@ define NWIPE_INITSH
 		PATH="../../host/bin:${PATH}" ./autogen.sh)
 endef
 
-NWIPE_POST_PATCH_HOOKS += NWIPE_INITSH
+# Pre-configure hook, as a post-patch hook would not get triggered on a package
+# reconfigure, and possibly also taint the sources directory with the generated
+# autogen files (which should not be there).
+NWIPE_PRE_CONFIGURE_HOOKS += NWIPE_INITSH
 
 $(eval $(autotools-package))
 
