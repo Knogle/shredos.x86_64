@@ -30,27 +30,21 @@ config BR2_PACKAGE_NWIPE_VERSION_STABLE
 	help
 	  Use the previously hard-coded commit (051e1aa) as a stable baseline.
 
-config BR2_PACKAGE_NWIPE_VERSION_MASTER
-	bool "Upstream master branch"
-	help
-	  Always build from the current upstream master branch.
-
 config BR2_PACKAGE_NWIPE_VERSION_GIT_REVISION
 	bool "Git revision"
 	help
-	  Use a user-specified Git revision (commit SHA-1 or branch name).
+	  Use a user-specified Git revision (commit SHA-1 or tag).
 
 endchoice
 
 config BR2_PACKAGE_NWIPE_GIT_REVISION
-	string "Insert a commit's SHA-1 or a branch name"
+	string "Git revision (commit SHA-1 or tag)"
 	depends on BR2_PACKAGE_NWIPE_VERSION_GIT_REVISION
 	help
 	  When 'Git revision' is selected above, this string is passed as the
 	  Git ref to check out. Examples:
-	    - origin/master
-	    - feature/my-branch
-	    - 051e1aa
+	    - 051e1aa        (commit SHA-1)
+	    - v0.39          (tag)
 
 endif
 
